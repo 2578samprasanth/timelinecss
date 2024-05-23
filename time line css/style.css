@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 30px;
+    background-color: rgb(196, 229, 255);
+    display: flex;
+    justify-content: center;
+}
+section#timeline{
+    width: 80%;
+    min-height: 100px;
+    position: relative;
+    /* border: 1px solid black; */
+    margin: 20px;
+    font-size: large;
+}
+
+section#timeline::before{
+    content: '';
+    background-color: black;
+    width: 5px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    right: 50%;
+}
+section#timeline article::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.inner{
+    float: left;
+    width: 40%;
+    border: 2px solid burlywood;
+    padding: 20px;
+    background-color: rgb(42, 112, 165);
+}
+.inner::after{
+    content: '';
+    position: absolute;
+    background-color: blue;
+    height: 55px;
+    width: 100px;
+    left: 38%;
+    top: 45px;
+    rotate: -45deg;
+    z-index: -1;
+}
+
+.inner1{
+    float: right;
+    width: 40%;
+    border: 2px solid burlywood;
+    margin-top: 160px;
+    padding: 20px;
+    background-color: rgb(42, 136, 165);
+    top: 90px;
+}
+.inner1::before{
+    content: '';
+    position: absolute;
+    background-color: blue;
+    height: 55px;
+    width: 100px;
+    right: 38%;
+    top: 190px;
+    rotate: -45deg;
+    z-index: -1;
+}
+
+.inner2{
+    float: left;
+    margin-top: 200px ;
+    width: 40%;
+    border: 2px solid burlywood;
+    padding: 20px;
+    background-color: rgb(42, 142, 165);
+    top: 90px;
+}
+.inner2::after{
+    content: '';
+    position: absolute;
+    background-color: blue;
+    height: 55px;
+    width: 100px;
+    left: 38%;
+    top: 390px;
+    rotate: -45deg;
+    z-index: -1;
+}
+
+.inner3{
+    float: right;
+    margin-top: 200px ;
+    width: 40%;
+    border: 2px solid burlywood;
+    padding: 20px;
+    background-color: rgb(42, 124, 165);
+    top: 90px;
+}
+.inner3::after{
+    content: '';
+    position: absolute;
+    background-color: blue;
+    height: 55px;
+    width: 100px;
+    right: 38%;
+    top: 525px;
+    rotate: -45deg;
+    z-index: -1;
+}
